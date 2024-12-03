@@ -1,0 +1,200 @@
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: getColorHex('white');
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+:lang(ar) * {
+  letter-spacing: 0 !important;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+a {
+  color: unset !important;
+  text-decoration: none !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[scroll='false'] {
+  overflow: hidden;
+}
+
+.react-loading-skeleton {
+  border-radius: 0;
+  line-height: 2;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.cursorGrabbing {
+  cursor: grabbing;
+}
+
+.cursorGrab {
+  cursor: grab;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+  color: getColorHex('black');
+}
+
+.queryHighlight {
+  background-color: #fff5d3;
+  /* Or any other desired style */
+  padding: 8px 5px;
+
+  @media (max-width: 425px) {
+    padding: 5px 5px;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Change the color of the progress bar */
+#nprogress .bar {
+  background: #26a387 !important; /* Your desired color */
+}
+
+/* Change the thickness of the progress bar */
+#nprogress .bar {
+  height: 15px; /* Your desired thickness */
+}
+
+/* Customize the spinner if you want */
+#nprogress .spinner-icon {
+  border-top-color: #26a387 !important; /* Your desired color */
+  border-left-color: #26a387 !important; /* Your desired color */
+}
+
+/* Customize the spinner size if you want */
+#nprogress .spinner {
+  top: 20px; /* Position the spinner */
+  right: 20px; /* Position the spinner */
+}
+
+/* Global CSS or targeted stylesheet */
+
+@supports (-webkit-appearance: none) {
+  /* Safari specific */
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    /* Cover autofill icon */
+    -webkit-text-fill-color: inherit !important;
+    /* Ensure text color is inherited */
+  }
+}
+
+.loginFormMain
+  .loginupForm
+  .formInput
+  input::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+
+:root {
+  --dynamic-height: 10%;
+}
+
+.vertical-timeline-element-date {
+  display: none !important;
+}
+
+.userway_buttons_wrapper {
+  top: 80px !important;
+}
+
+.isActiveInput {
+  border: 1px solid #26a387 !important;
+  box-shadow: 0px 4px 4px 0px #99d0c3;
+}
+
+/* Hide arrow in input type number====================> start*/
+
+/* Hide spinner in Chrome, Safari, Edge */
+input[type='number'] {
+  -moz-appearance: textfield;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  /* Edge */
+}
+
+/* Hide spinner in Firefox */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body.modal-open {
+  padding-right: 15px;
+  /* Adjust based on your scrollbar width */
+  overflow: hidden;
+}
+
+.btn.show {
+  color: unset !important;
+  border-color: unset !important;
+  background-color: unset !important;
+}
+
+#cancle-modal {
+  max-width: 343px !important;
+}
+
+.mainContainer {
+  padding: 30px;
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+@import "../../../assets/styles/main.scss";
+
+.globalLoaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  &.active {
+    opacity: 1; /* Visible state */
+    visibility: visible; /* Allows user interaction */
+  }
+
+  .loader {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_spinner {
+      width: 50px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(farthest-side, #f47500 94%, #0000) top/0.3rem
+          0.3rem no-repeat,
+        conic-gradient(#0000 30%, #f47500);
+      mask: radial-gradient(
+        farthest-side,
+        #0000 calc(100% - 0.3rem),
+        #180d22 0
+      );
+      animation: l13 1s infinite linear;
+      @keyframes l13 {
+        100% {
+          transform: rotate(1turn);
+        }
+      }
+    }
+  }
+}
